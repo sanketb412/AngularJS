@@ -1,0 +1,132 @@
+<html>
+    <head>
+        <title>AngularJS First Application</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+        <script src="./ang.js"></script>
+    </head>
+    <body>
+        <!-- <h1>Sample Application</h1>
+        <div ng-app="">
+            <p>Enter Your Name : <input type="text" ng-model="name"></p>
+            <p>Hello <span ng-bind="name"></span></p>
+        </div> -->
+<!-- ----------------------------------------------------------------------------------------------- -->
+        <!-- can display two way data from vontroller to view -->
+
+        <!-- ***************** 1st way ******************* -->
+        <!-- <p> <span ng-bind="name"></span></p>
+        <p> <span ng-bind="designation"></span></p> -->
+
+        <!-- ***************** 2nd way ******************* -->
+        <!-- <h1> {{name}}</h1>
+        <h2> {{designation}} </h2> -->
+<!-- ----------------------------------------------------------------------------------------------- -->
+        <!-- <div ng-controller="Controller1">
+            {{name1}}
+            <br/>
+            {{msg2}}
+        </div>
+
+        <br/>
+
+        <div ng-controller="Controller2">
+            {{name2}}
+            <br/>
+            {{msg1}}
+        </div> -->
+<!-- ----------------------------------------------------------------------------------------------- -->
+        <!-- <h1>ng-init directives</h1>
+        <div ng-app="" ng-init="name='Sanket'; id=101">
+
+            <p>Enter Your Name : <input type="text" ng-model="name"> </p>
+
+        </div> -->
+<!-- ----------------------------------------------------------------------------------------------- -->
+        <!-- <h1>ng-repeat directive</h1>
+        <div ng-app="" ng-init="name=['sanket', 'vicky', 'babu', 'sumit'];
+                                users=[
+                                    {name:'Sanket', contact:1235, city:'Mumbai'},
+                                    {name:'vicky', contact:5654, city:'Nagpur'},
+                                    {name:'Sachin', contact:4565, city:'Pune'},
+                                ]">
+            <ul>
+                <li ng-repeat="x in name">
+                    <p>{{x}}</p>
+                </li>
+            </ul>
+            <br/>
+            <ul>
+                <li ng-repeat="y in users">
+                    <p>{{y.name}}</p>
+                    <p>{{y.contact}}</p>
+                    <p>{{y.city}}</p>
+                </li>
+            </ul>
+        </div> -->
+<!-- ----------------------------------------------------------------------------------------------- -->
+        <!-- <h1>ng-hide directive</h1>
+
+        Hide checkbox: <input type="checkbox" ng-model="hide">
+
+        <div ng-hide="hide">
+            <h1>Welcome</h1>
+            <h3>click on checkbox to hide me</h3>
+        </div> -->
+<!-- ----------------------------------------------------------------------------------------------- -->
+        <!-- <h1>ng-show directive</h1>
+
+        Show checkbox: <input type="checkbox" ng-model="show">
+
+        <div ng-show="show">
+            <h1>Pika boo..!!!!!!!</h1>
+        </div> -->
+<!-- ----------------------------------------------------------------------------------------------- -->
+        <!-- <h1>Filterss</h1>
+        syntax: {{expression | filter1|filter2}}
+
+        <p>Enter your Name: <input type="text" ng-model="name"></p>
+        <p>
+            <span> Uppercase Filter: {{name|uppercase}}</span>
+        </p>
+        <p>
+            <span> Lowercase Filter: {{name|lowercase}}</span>
+        </p>
+        <hr/> -->
+<!-- ----------------------------------------------------------------------------------------------- -->
+        <!-- <div ng-app="mymodule">    
+            <h1>One Way Data Binding</h1>
+
+            <div ng-controller="mycontroller">
+                <p> First Name is: {{firstname}}</p>
+                <p> Last Name is: {{lastname}}</p>
+                <p> Technology used is: {{technology}}</p>
+            </div>
+            <hr/>
+            <h1>Two Way Data Binding</h1>
+            <div ng-controller="mycontroller">
+                <p> First Name: <input type="text" ng-model="firstname"></p>
+
+                <p><span>{{firstname}}</span></p>
+            </div>     
+        </div> -->
+<!-- ----------------------------------------------------------------------------------------------- -->
+        <!-- <h3>Custom Directive</h3>
+        <div ng-app="myApp">
+            <my-first-directive></my-first-directive>
+        </div> -->
+<!-- ----------------------------------------------------------------------------------------------- -->
+        <!-- <h3>Scope in Custom Directive</h3>
+        <div ng-app="test">
+            <div ng-controller="myController">
+                <my-directive></my-directive>
+                <h3 ng-click="reverseName()">Hey {{name}}, Click me to reverse your name = {{name}}</h3>
+                <br/>
+            </div>
+        </div>  -->
+<!-- ----------------------------------------------------------------------------------------------- -->
+        <h3>Custom filters</h3>
+        
+
+
+    </body>
+</html>
